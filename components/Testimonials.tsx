@@ -1,9 +1,12 @@
+
 import React, { useState } from 'react';
 import Button from './Button';
-import { ExternalLink, Play } from 'lucide-react';
+import { Play } from 'lucide-react';
 
 // ID exato do vídeo fornecido
 const VIDEO_ID = "1uIQOVKNItuk-0FR2_MOY06IJHiqhLhFu";
+// Usando o link de preview oficial do Google Drive (garante que funciona)
+const VIDEO_URL = `https://drive.google.com/file/d/${VIDEO_ID}/preview`;
 
 const Testimonials: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -42,35 +45,18 @@ const Testimonials: React.FC = () => {
                       <Play size={32} className="text-black fill-black" />
                     </div>
                     <p className="mt-6 text-gold-500 font-medium uppercase tracking-widest text-xs">Clique para assistir</p>
-                    <p className="mt-2 text-gray-500 text-[10px]">Carregamento seguro</p>
                   </button>
                 ) : (
-                  /* Iframe loads only after click */
+                  /* Player Google Drive (Iframe) */
                   <iframe 
-                      src={`https://drive.google.com/file/d/${VIDEO_ID}/preview`}
+                      src={VIDEO_URL}
                       className="absolute top-0 left-0 w-full h-full z-10"
-                      style={{ border: 'none' }}
-                      allow="autoplay; encrypted-media; fullscreen; picture-in-picture"
-                      allowFullScreen
+                      allow="autoplay; fullscreen"
                       title="Depoimento Cliente"
-                  ></iframe>
+                  >
+                  </iframe>
                 )}
 
-            </div>
-
-            <div className="mt-4 text-center px-4">
-                <p className="text-gray-500 text-xs mb-2">
-                    Problemas para visualizar?
-                </p>
-                <a 
-                    href={`https://drive.google.com/file/d/${VIDEO_ID}/view?usp=sharing`}
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 text-gold-500 hover:text-white transition-colors text-sm font-medium border border-gold-500/30 hover:border-gold-500 rounded-full px-4 py-2"
-                >
-                    <span>Assistir diretamente no Drive</span>
-                    <ExternalLink size={14} />
-                </a>
             </div>
         </div>
 

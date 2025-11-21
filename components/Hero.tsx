@@ -42,11 +42,12 @@ const Hero: React.FC = () => {
             {/* Back Glow behind the person */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-gold-500/20 blur-[60px] rounded-full -z-10"></div>
 
-            {/* The Person Image - Google Drive Link */}
+            {/* The Person Image - Google Drive Link Fixed for Mobile */}
             <img 
               src="https://lh3.googleusercontent.com/d/1rCyjlMa7lvUlFjcs203XShUki3ivD7qU"
               alt="Juan Luca" 
               className="h-full w-auto object-cover drop-shadow-[0_0_30px_rgba(0,0,0,0.8)]"
+              referrerPolicy="no-referrer"
               style={{
                 maskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)',
                 WebkitMaskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)'

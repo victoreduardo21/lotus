@@ -13,6 +13,7 @@ const Footer: React.FC = () => {
               src="https://lh3.googleusercontent.com/d/1tBK3MiHaCLvCTL6LuI56pZKg_rv6QPvg" 
               alt="Lotus Logo" 
               className="w-24 md:w-32 h-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+              referrerPolicy="no-referrer"
             />
             
             <div className="flex flex-col gap-1">

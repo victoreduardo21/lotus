@@ -10,7 +10,8 @@ const Header: React.FC = () => {
         <img 
           src="https://lh3.googleusercontent.com/d/1tBK3MiHaCLvCTL6LuI56pZKg_rv6QPvg" 
           alt="Lotus Logo" 
-          className="w-32 md:w-40 h-auto object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.5)]"
+          className="w-20 md:w-20 h-auto object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.5)]"
+          referrerPolicy="no-referrer"
         />
         
         <div className="flex flex-col justify-center h-full pt-1">
