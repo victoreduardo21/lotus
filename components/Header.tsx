@@ -2,22 +2,24 @@ import React from 'react';
 
 const Header: React.FC = () => {
   return (
-    <header className="pt-8 px-4 md:px-8 max-w-7xl mx-auto w-full flex items-center relative z-20">
-      <div className="flex items-center gap-4 group relative">
+    <header className="pt-8 px-4 md:px-8 max-w-7xl mx-auto w-full flex items-center">
+      <div className="flex items-center gap-2 relative">
+        {/* Glow behind logo */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-gold-500/20 blur-[30px] rounded-full -z-10"></div>
         
-        {/* Glow Effect behind Logo - Increased size */}
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-20 h-20 bg-gold-500/30 blur-[30px] rounded-full -z-10"></div>
-
-        {/* Logo Image - Google Drive Link - Increased Size */}
         <img 
           src="https://lh3.googleusercontent.com/d/1tBK3MiHaCLvCTL6LuI56pZKg_rv6QPvg" 
           alt="Lotus Logo" 
-          className="w-16 h-16 md:w-24 md:h-24 object-contain drop-shadow-[0_0_15px_rgba(245,158,11,0.4)]"
+          className="w-32 md:w-40 h-auto object-contain drop-shadow-[0_0_10px_rgba(0,0,0,0.5)]"
         />
         
-        <div className="flex flex-col justify-center">
-          <span className="text-white font-bold text-xl md:text-2xl leading-tight">Lotus</span>
-          <span className="text-gray-500 text-[10px] md:text-xs uppercase tracking-wide">Assessoria de Performance</span>
+        <div className="flex flex-col justify-center h-full pt-1">
+           {/* Logo image replaces the main text, keeping just the subtitle nicely aligned if needed, or removing it if the logo has text. 
+               Assuming the logo contains the brand name, we keep the subtitle next to it or hide it. 
+               Based on typical requests, usually we keep the subtitle or adjust spacing. Let's keep the subtitle aligned. */}
+          <span className="text-gray-500 text-[10px] uppercase tracking-wide border-l border-gray-700 pl-3 ml-3 h-fit">
+            Assessoria de Performance
+          </span>
         </div>
       </div>
     </header>

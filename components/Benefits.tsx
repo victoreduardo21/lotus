@@ -40,7 +40,7 @@ const Benefits: React.FC = () => {
            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[400px] h-[150px] bg-gold-500/20 blur-[60px] -z-10"></div>
           
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 relative z-10">
-            O que você recebe em nossa consultoria gratuita
+            O que você recebe em nossa <span className="text-gold-500">consultoria gratuita</span>
           </h2>
           <p className="text-gray-400 text-sm md:text-base max-w-2xl mx-auto relative z-10 px-2">
             Descubra exatamente quais benefícios você terá ao participar da nossa consultoria gratuita e como cada etapa foi pensada para ajudar você a alcançar resultados reais de forma rápida e estratégica.

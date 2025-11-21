@@ -7,23 +7,22 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
         
         {/* Left: Brand & Legal */}
-        <div className="flex flex-col items-center md:items-start gap-2 text-center md:text-left">
-            <div className="flex items-center gap-3 mb-1">
-                {/* Logo Image - Google Drive Link - Increased size */}
-                <img 
-                  src="https://lh3.googleusercontent.com/d/1tBK3MiHaCLvCTL6LuI56pZKg_rv6QPvg" 
-                  alt="Lotus" 
-                  className="w-10 h-10 object-contain opacity-90" 
-                />
-                <h4 className="text-white font-bold text-xl">Lotus</h4>
+        <div className="flex flex-col items-center md:items-start gap-4 text-center md:text-left">
+            {/* Logo Image */}
+            <img 
+              src="https://lh3.googleusercontent.com/d/1tBK3MiHaCLvCTL6LuI56pZKg_rv6QPvg" 
+              alt="Lotus Logo" 
+              className="w-24 md:w-32 h-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
+            />
+            
+            <div className="flex flex-col gap-1">
+              <p className="text-gray-500 max-w-xs">
+                  © Grupo Assessoria de Performance Lotus, todos os direitos reservados
+              </p>
+              <p className="text-gray-600 text-[10px]">
+                  CNPJ: 01.453.816/0001-59 • Termos de Uso • Políticas de Privacidade
+              </p>
             </div>
-            <span className="text-gray-600 text-[10px] uppercase tracking-wider mb-2">Performance</span>
-            <p className="text-gray-500 max-w-xs">
-                © Grupo Assessoria de Performance Lotus, todos os direitos reservados
-            </p>
-            <p className="text-gray-600 text-[10px]">
-                CNPJ: 01.453.816/0001-59 • Termos de Uso • Políticas de Privacidade
-            </p>
         </div>
 
         {/* Center: Creator Credit */}
