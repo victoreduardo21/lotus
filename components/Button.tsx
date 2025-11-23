@@ -21,8 +21,10 @@ const Button: React.FC<ButtonProps> = ({ text, onClick, className = '', variant 
     if (onClick) {
       onClick();
     } else {
-      // Updated contact number
-      window.open('https://wa.me/5547991005930', '_blank');
+      // Updated contact number with pre-filled message
+      const phoneNumber = '5547991005930';
+      const message = encodeURIComponent('Olá, gostaria de saber mais sobre os serviços da Lotus.');
+      window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
     }
   };
 

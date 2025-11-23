@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Twitter, Instagram } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -10,10 +10,9 @@ const Footer: React.FC = () => {
         <div className="flex flex-col items-center md:items-start gap-4 text-center md:text-left">
             {/* Logo Image */}
             <img 
-              src="https://lh3.googleusercontent.com/d/1tBK3MiHaCLvCTL6LuI56pZKg_rv6QPvg" 
+              src="https://lh3.googleusercontent.com/d/1KxqNCTyqWUVFwXNjmstdzeRa74ukr4QI" 
               alt="Lotus Logo" 
-              className="w-24 md:w-32 h-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
-              referrerPolicy="no-referrer"
+              className="w-28 md:w-36 h-auto object-contain opacity-90 hover:opacity-100 transition-opacity"
             />
             
             <div className="flex flex-col gap-1">
@@ -34,13 +33,12 @@ const Footer: React.FC = () => {
         {/* Right: Social Links */}
         <div className="flex items-center gap-4">
             <span className="text-gray-400">Siga a Lotus</span>
-            <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-black hover:bg-gray-200 transition-colors">
-                <Facebook size={14} />
-            </a>
-            <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-black hover:bg-gray-200 transition-colors">
-                <Twitter size={14} />
-            </a>
-            <a href="#" className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-black hover:bg-gray-200 transition-colors">
+            <a 
+              href="https://www.instagram.com/lotus.perform/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="w-8 h-8 bg-white rounded-full flex items-center justify-center text-black hover:bg-gray-200 transition-colors"
+            >
                 <Instagram size={14} />
             </a>
         </div>

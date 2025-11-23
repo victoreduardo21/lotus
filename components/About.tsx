@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Instagram, Twitter, Youtube } from 'lucide-react';
+import { Instagram } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
@@ -28,14 +28,13 @@ const About: React.FC = () => {
             <span className="text-gold-500 text-xs uppercase tracking-widest mb-6 font-bold glow-text relative z-10">Founder</span>
             
             <div className="flex gap-3 w-full justify-center relative z-10">
-              <a href="#" className="text-gray-400 hover:text-gold-500 hover:bg-gold-500/10 transition-all bg-[#161825] p-3 rounded-lg border border-gray-800 hover:border-gold-500/50 shadow-lg">
+              <a 
+                href="https://www.instagram.com/lotus.perform/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-gold-500 hover:bg-gold-500/10 transition-all bg-[#161825] p-3 rounded-lg border border-gray-800 hover:border-gold-500/50 shadow-lg"
+              >
                 <Instagram size={18} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-gold-500 hover:bg-gold-500/10 transition-all bg-[#161825] p-3 rounded-lg border border-gray-800 hover:border-gold-500/50 shadow-lg">
-                <Twitter size={18} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-gold-500 hover:bg-gold-500/10 transition-all bg-[#161825] p-3 rounded-lg border border-gray-800 hover:border-gold-500/50 shadow-lg">
-                <Youtube size={18} />
               </a>
             </div>
           </div>

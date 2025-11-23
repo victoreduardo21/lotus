@@ -35,28 +35,29 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Image Content */}
-      <div className="w-full md:w-1/2 relative flex justify-center md:justify-end px-0 h-[400px] md:h-[600px] items-end">
+      <div className="w-full md:w-1/2 relative flex justify-center md:justify-end px-0 h-[450px] md:h-[600px] items-end">
          
          {/* Image Container */}
-         <div className="relative w-auto h-[90%] md:h-full z-10 flex justify-center">
+         <div className="relative w-full h-full z-10 flex justify-center items-end">
             {/* Back Glow behind the person */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-gold-500/20 blur-[60px] rounded-full -z-10"></div>
 
-            {/* The Person Image - Google Drive Link Fixed for Mobile */}
+            {/* The Person Image - Google Drive Direct Media Link (lh3) */}
             <img 
               src="https://lh3.googleusercontent.com/d/1rCyjlMa7lvUlFjcs203XShUki3ivD7qU"
+              loading="eager"
               alt="Juan Luca" 
-              className="h-full w-auto object-cover drop-shadow-[0_0_30px_rgba(0,0,0,0.8)]"
+              className="h-full w-auto object-contain object-bottom drop-shadow-[0_0_30px_rgba(0,0,0,0.8)]"
               referrerPolicy="no-referrer"
               style={{
-                maskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)',
-                WebkitMaskImage: 'linear-gradient(to bottom, black 85%, transparent 100%)'
+                maskImage: 'linear-gradient(to bottom, black 90%, transparent 100%)',
+                WebkitMaskImage: 'linear-gradient(to bottom, black 90%, transparent 100%)'
               }}
             />
          </div>
          
          {/* Extra ambiance */}
-         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-1/3 bg-gradient-to-t from-[#050507] to-transparent z-20"></div>
+         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-1/4 bg-gradient-to-t from-[#050507] to-transparent z-20"></div>
       </div>
     </section>
   );
