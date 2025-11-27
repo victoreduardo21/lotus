@@ -36,14 +36,14 @@ const Benefits: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         
         <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto relative">
-           {/* Glow behind title - Gold */}
+           {/* Glow behind title */}
            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[400px] h-[150px] bg-gold-500/20 blur-[60px] -z-10"></div>
           
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 relative z-10">
-            O que você recebe em nossa <span className="text-gold-500">consultoria gratuita</span>
+            O que você recebe em nosso <span className="text-gold-500">diagnóstico gratuito</span>
           </h2>
           <p className="text-gray-400 text-sm md:text-base max-w-2xl mx-auto relative z-10 px-2">
-            Descubra exatamente quais benefícios você terá ao participar da nossa consultoria gratuita e como cada etapa foi pensada para ajudar você a alcançar resultados reais de forma rápida e estratégica.
+            Descubra exatamente quais benefícios você terá ao participar do nosso diagnóstico gratuito e como cada etapa foi pensada para ajudar você a alcançar resultados reais de forma rápida e estratégica.
           </p>
         </div>
 
@@ -54,8 +54,8 @@ const Benefits: React.FC = () => {
               className={`
                 p-6 md:p-8 rounded-xl flex flex-col gap-4 md:gap-6 transition-all duration-300 group relative overflow-hidden
                 ${item.isHighlight 
-                  ? 'bg-gold-500 text-black shadow-[0_0_50px_rgba(245,158,11,0.4)] transform md:-translate-y-4' 
-                  : 'bg-[#0b0d15] border border-gold-500/40 hover:border-gold-500 text-gray-300 hover:shadow-[0_0_20px_rgba(245,158,11,0.15)]'
+                  ? 'bg-gold-500 text-black shadow-[0_0_50px_rgba(34,197,94,0.4)] transform md:-translate-y-4' 
+                  : 'bg-[#0b0d15] border border-gold-500/40 hover:border-gold-500 text-gray-300 hover:shadow-[0_0_20px_rgba(34,197,94,0.15)]'
                 }
               `}
             >
@@ -73,7 +73,7 @@ const Benefits: React.FC = () => {
         </div>
 
         <div className="flex justify-center">
-          <Button text="AGENDAR CONSULTORIA" />
+          <Button text="SEU DIAGNÓSTICO GRATUITO" />
         </div>
 
       </div>

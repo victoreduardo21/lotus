@@ -14,7 +14,7 @@ const Testimonials: React.FC = () => {
        {/* Top Shine */}
        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[300px] md:w-[600px] h-[100px] bg-white/5 blur-[60px] md:blur-[80px] -z-10 pointer-events-none"></div>
 
-       {/* Subtle Gold Background Gradient */}
+       {/* Subtle Green Background Gradient */}
        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-gold-500/10 blur-[80px] md:blur-[120px] rounded-full -z-10 pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-6">
@@ -30,7 +30,7 @@ const Testimonials: React.FC = () => {
         {/* Video Container */}
         <div className="flex flex-col items-center justify-center mb-12 w-full">
             
-            <div className="relative w-full max-w-[340px] aspect-[9/16] bg-black rounded-2xl overflow-hidden border border-gold-500/30 shadow-[0_0_40px_rgba(0,0,0,0.5)] hover:shadow-[0_0_40px_rgba(245,158,11,0.15)] transition-all duration-300 group">
+            <div className="relative w-full max-w-[340px] aspect-[9/16] bg-black rounded-2xl overflow-hidden border border-gold-500/30 shadow-[0_0_40px_rgba(0,0,0,0.5)] hover:shadow-[0_0_40px_rgba(34,197,94,0.15)] transition-all duration-300 group">
                 
                 {!isPlaying ? (
                   /* Click-to-Play Cover */
@@ -38,7 +38,7 @@ const Testimonials: React.FC = () => {
                     onClick={() => setIsPlaying(true)}
                     className="absolute inset-0 w-full h-full flex flex-col items-center justify-center bg-[#161825] cursor-pointer z-20 hover:bg-[#1c1f2e] transition-colors"
                   >
-                    <div className="w-20 h-20 rounded-full bg-gold-500 flex items-center justify-center pl-1 shadow-[0_0_30px_rgba(245,158,11,0.4)] group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-20 h-20 rounded-full bg-gold-500 flex items-center justify-center pl-1 shadow-[0_0_30px_rgba(34,197,94,0.4)] group-hover:scale-110 transition-transform duration-300">
                       <Play size={32} className="text-black fill-black" />
                     </div>
                     <p className="mt-6 text-gold-500 font-medium uppercase tracking-widest text-xs">Clique para assistir</p>
@@ -60,7 +60,7 @@ const Testimonials: React.FC = () => {
         </div>
 
         <div className="flex justify-center">
-          <Button text="AGENDAR CONSULTORIA" />
+          <Button text="SEU DIAGNÓSTICO GRATUITO" />
         </div>
       </div>
     </section>
