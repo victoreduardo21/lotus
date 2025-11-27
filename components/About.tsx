@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Instagram } from 'lucide-react';
+import { Instagram, MessageCircle } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
@@ -25,16 +25,27 @@ const About: React.FC = () => {
               />
             </div>
             <h3 className="text-xl font-bold text-white mb-1 relative z-10">Juan Luca</h3>
-            <span className="text-gold-500 text-xs uppercase tracking-widest mb-6 font-bold glow-text relative z-10">Founder</span>
+            <span className="text-gold-500 text-xs uppercase tracking-widest mb-6 font-bold glow-text relative z-10">Founder / Diretor</span>
             
             <div className="flex gap-3 w-full justify-center relative z-10">
               <a 
                 href="https://www.instagram.com/lotus.perform/" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                title="Instagram da Empresa"
                 className="text-gray-400 hover:text-gold-500 hover:bg-gold-500/10 transition-all bg-[#161825] p-3 rounded-lg border border-gray-800 hover:border-gold-500/50 shadow-lg"
               >
                 <Instagram size={18} />
+              </a>
+
+              <a 
+                href="https://wa.me/5547991005930?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Lotus." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                title="WhatsApp"
+                className="text-gray-400 hover:text-green-500 hover:bg-green-500/10 transition-all bg-[#161825] p-3 rounded-lg border border-gray-800 hover:border-green-500/50 shadow-lg"
+              >
+                <MessageCircle size={18} />
               </a>
             </div>
           </div>
@@ -47,23 +58,23 @@ const About: React.FC = () => {
           </h2>
           
           <p>
-            A Lótus Agency iniciou sua trajetória em 2019 como um trabalho freelancer e, em 2020, estruturou-se como uma agência de desenvolvimento web, performance e marketing digital, adotando um modelo de negócios totalmente focado em resultados e geração de valor.
+            Como um apaixonado pela ciência, línguas, filosofia, mente humana e cultura estóica, guio meus negócios pessoais com disciplina e previsibilidade.
           </p>
           
           <p>
-            Em 2021, expandiu sua atuação ao fundar a UpInside, uma escola que formou mais de 27 mil profissionais e recebeu reconhecimento nacional.
+            Desde 2017 no digital, minha operação hoje é rodeada de pessoas do ecossistema de marketing, desenvolvimento de empresas e comercial, além da parte jurídica e financeira.
           </p>
 
           <p>
-            Em 2022, lançou o Curso Agência de Valor, responsável por impulsionar mais de 3.387 alunos e gerar mais de 24 milhões em contratos comprovados.
+            Hoje além de tudo isso, trabalhamos com uma HUB IA (Generativa) parceira que é de tirar o fôlego e alavancar o negócio de qualquer pessoa. Muito orgulho do meu esforço, conhecimento e do meu time!
           </p>
 
           <div className="bg-[#0b0d15] border border-gold-500/20 p-6 rounded-lg mt-6 shadow-[0_0_15px_rgba(245,158,11,0.05)]">
             <p className="text-gray-300 italic">
-              Em 2023, a Lótus Agency iniciou seu maior projeto: um programa premium de acompanhamento dedicado a ajudar freelancers, PJs e agências a alcançarem faturamentos acima de 100 mil reais mensais.
+              Em 2025, a Lotus Company iniciou seu maior projeto: um programa premium de acompanhamento dedicado a ajudar Empresas para alcançarem faturamentos acima de 100 mil reais mensais.
             </p>
             <p className="font-bold text-white pt-4 text-right">
-              — Essa é a Mentoria Agêncy Lótus.
+              — Essa é a Metodologia LOTUS.
             </p>
           </div>
         </div>
