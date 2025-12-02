@@ -15,8 +15,9 @@ const Hero: React.FC = () => {
           Assessoria de Performance
         </span>
         
+        {/* Updated drop-shadow to Green RGB */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-[1.15] md:leading-[1.1]">
-          Sua Estética Avançada <span className="text-gold-500 drop-shadow-[0_0_15px_rgba(34,197,94,0.5)]">Faturando 2 a 4 vezes mais</span> todos os meses <span className="text-white">com lucro e sem você na operação!</span>
+          Sua Estética Avançada <span className="text-gold-500 drop-shadow-[0_0_15px_rgba(34,197,94,0.3)]">Faturando 2 a 4 vezes mais</span> todos os meses <span className="text-white">com lucro e sem você na operação!</span>
         </h1>
         
         <p className="text-gray-400 text-sm sm:text-base md:text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
@@ -29,7 +30,13 @@ const Hero: React.FC = () => {
           ou de não conseguir crescer seu negócio. Agende seu diagnóstico GRATUITO e vamos acelerar.
         </p>
 
-        {/* Button removed as requested */}
+        {/* Instagram Button */}
+        <div className="pt-4 flex justify-center md:justify-start">
+          <Button 
+            text="ACESSAR INSTAGRAM" 
+            onClick={() => window.open('https://www.instagram.com/lotus.perform/', '_blank')}
+          />
+        </div>
       </div>
 
       {/* Image Content */}
@@ -37,7 +44,7 @@ const Hero: React.FC = () => {
          
          {/* Image Container */}
          <div className="relative w-full h-full z-10 flex justify-center items-end">
-            {/* Back Glow behind the person */}
+            {/* Back Glow behind the person - Green */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-gold-500/20 blur-[60px] rounded-full -z-10"></div>
 
             {/* The Person Image - Google Drive Direct Media Link (lh3) */}
@@ -54,7 +61,7 @@ const Hero: React.FC = () => {
             />
          </div>
          
-         {/* Extra ambiance */}
+         {/* Extra ambiance - Black Gradient */}
          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-1/4 bg-gradient-to-t from-[#050507] to-transparent z-20"></div>
       </div>
     </section>

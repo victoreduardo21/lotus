@@ -36,7 +36,7 @@ const Benefits: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-6">
         
         <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto relative">
-           {/* Glow behind title */}
+           {/* Glow behind title - Green */}
            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] md:w-[400px] h-[150px] bg-gold-500/20 blur-[60px] -z-10"></div>
           
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 relative z-10">

@@ -10,8 +10,9 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ text, onClick, className = '', variant = 'primary' }) => {
   const baseStyles = "uppercase text-xs tracking-[0.15em] font-bold py-4 px-10 transition-all duration-300 border select-none";
   
-  // Primary: Orange/Gold background, Black text -> Hover: Black background, Orange/Gold text
-  const primaryStyles = "bg-gold-500 border-gold-500 text-black hover:bg-black hover:text-gold-500 shadow-[0_0_20px_rgba(245,158,11,0.3)] hover:shadow-[0_0_30px_rgba(245,158,11,0.5)]";
+  // Primary: Green background, Black text -> Hover: Black background, Green text
+  // Updated shadows to Green RGB (34,197,94)
+  const primaryStyles = "bg-gold-500 border-gold-500 text-black hover:bg-black hover:text-gold-500 shadow-[0_0_20px_rgba(34,197,94,0.3)] hover:shadow-[0_0_30px_rgba(34,197,94,0.5)]";
   
   const outlineStyles = "bg-transparent border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-black";
 

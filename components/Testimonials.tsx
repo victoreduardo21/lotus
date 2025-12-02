@@ -36,8 +36,9 @@ const Testimonials: React.FC = () => {
                   /* Click-to-Play Cover */
                   <button 
                     onClick={() => setIsPlaying(true)}
-                    className="absolute inset-0 w-full h-full flex flex-col items-center justify-center bg-[#161825] cursor-pointer z-20 hover:bg-[#1c1f2e] transition-colors"
+                    className="absolute inset-0 w-full h-full flex flex-col items-center justify-center bg-[#0b0d15] cursor-pointer z-20 hover:bg-[#161825] transition-colors"
                   >
+                    {/* Play Button - Shadow Green */}
                     <div className="w-20 h-20 rounded-full bg-gold-500 flex items-center justify-center pl-1 shadow-[0_0_30px_rgba(34,197,94,0.4)] group-hover:scale-110 transition-transform duration-300">
                       <Play size={32} className="text-black fill-black" />
                     </div>
